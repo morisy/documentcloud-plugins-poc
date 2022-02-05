@@ -8,12 +8,16 @@ while client.access_token == None:
     except:
         print("Something went wrong, try your credentials again or exit program.")
 
-params =  { 
-    "token": client.access_token, 
-    "base_uri": base_uri,
-    "documents": documents,
-    "data": data
-    }
+documents = []
 
-params_json = json.dump(params, p)
+while doc_picker != "none":
+    doc_picker = input('Put in another document ID or type "none": ')
+        if doc_picker != none:
+            documents.append(doc_picker)
 
+print("We're working on these documents " + str(documents))
+
+data = input('Data option: ')
+params = json.dump(params, p)
+
+main(client, documents, data)

@@ -1,0 +1,7 @@
+---
+project: textfield
+  help: "Put the ID of the project here."
+action: dropdown
+  - redact
+  - private proposed redaction
+  - shared proposed redaction
